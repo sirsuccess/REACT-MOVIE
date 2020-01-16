@@ -26,18 +26,19 @@ export default function SearchComponent({ parentState }) {
   }
   return (
     <div className="search">
-        <form>
-      <div className="innerSearch">
-            
-        <input
-          type="text"
-          name="item"
-          placeholder="Search movie..."
-          onChange={searchFunct}
-        ></input>
-        <button type="reset" className="btn">X</button>
-      </div>
-        </form>
+      <form>
+        <div className="innerSearch">
+          <input
+            type="text"
+            name="item"
+            placeholder="Search movie..."
+            onChange={searchFunct}
+          ></input>
+          <button type="reset" className="btn">
+            X
+          </button>
+        </div>
+      </form>
       {movieSearch.map(movie => {
         return (
           <li onClick={() => getDetails(movie.imdbID)}>
