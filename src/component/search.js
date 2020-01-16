@@ -8,7 +8,7 @@ export default function SearchComponent({ parentState }) {
   async function searchFunct(e) {
     let typedItem = e.target.value;
     const movieFetch = await axios.get(
-      `http://www.omdbapi.com/?apikey=53b5bde7&s=${typedItem}`
+      `https://www.omdbapi.com/?apikey=53b5bde7&s=${typedItem}`
     );
 
     if (!movieFetch.data.Error) {
@@ -20,7 +20,7 @@ export default function SearchComponent({ parentState }) {
 
   async function getDetails(movieID) {
     const movieFetch = await axios.get(
-      `http://www.omdbapi.com/?i=${movieID}&apikey=53b5bde7`
+      `https://www.omdbapi.com/?i=${movieID}&apikey=53b5bde7`
     );
     setMovie(movieFetch.data);
   }

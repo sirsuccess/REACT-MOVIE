@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchContact = async () => {
       const movieFetch = await axios.get(
-        "http://www.omdbapi.com/?i=tt3896198&apikey=53b5bde7"
+        "https://www.omdbapi.com/?i=tt3896198&apikey=53b5bde7"
       );
       setMovie(movieFetch.data);
     };
