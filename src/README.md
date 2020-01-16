@@ -10,7 +10,7 @@ Site: [React Movie](https://react-film.netlify.com/)
 
 ## Main page
 
-![Main page](public/assets/imgs/main.PNG)
+![Main page](/public/assets/imgs/main.PNG)
 
 A movie searching web App. Powered by React.
 
@@ -23,7 +23,7 @@ A movie searching web App. Powered by React.
 
 ## Searcch
 
-![Search](public/assets/imgs/search.PNG)
+![Search](/public/assets/imgs/search.PNG)
 
 ## Running the Project
 
